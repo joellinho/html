@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="css/">
+	<script src=""></script>
+</head> 
+<body>
+	<h1>Staff</h1>
+			
+<!-- usando microdatos usando un esquema que representa aun objeto hace mas semantica tu pagina web-->
+	<article itemscope itemtype="http://schema.org/Person"> 
+		<img src="" alt="" itemprop="image">
+		<h2 itemprop="Name">Alavaro Felipe</h2>
+		<p itemprop="jobTitle">Director de proyectos de Escuela Digital,Desarrollador y diseñador web</p>
+		<p itemprop="email">alavarofelipe@escueladigital.pe</p>
+		<p itemprop="address">lima,péru</p>
+
+	</article>
+
+	<article itemscope itemtype="http://schema.org/Person">
+		<img src="" imtemprop="image">
+		<h2 itemprop="name"> joel enciso saravia</h2>
+		<p itemprop="jobTitle"> programador en empresa fundador de ti</p>
+		<p itemprop="email">joelg_es@hotmail.com </p>
+		<p itemprop="address"> cañete ,mal</p>
+	</article>
+		<article>
+		<img src="" alt="">
+		<h2>Alavaro Felipe</h2>
+		<p>Director de proyectos de Escuela Digital,Desarrollador y diseñador web</p>
+		<p>alavarofelipe@escueladigital.pe</p>
+		<p>lima,péru</p>
+
+	</article>
+	<article itemscope itemtype="http://schema.org/BookSeries">
+		<img src="" itemprop="image">
+		<h2 itemprop="creator"> Julio Ramón Riveiro </h2>
+		<h3 itemprop="description"> novela drámatica</h3>
+		<h4 itemprop="name"> los perros abandonados</h4>		
+		
+
+	</article>
+
+</body>
+</html>
+<!--
+para los parrafos itemscope(contexto,booleano o vacio) 
+,itemtype(indica el tipo de schema) nos ayuda a google te entienda a que se refiera este microdatos, se pueden testear
+ y itemprop (indica el tipo de dato)-->

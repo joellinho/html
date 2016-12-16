@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+    <style>
+        #video {
+            margin-bottom: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- ********antes**************
+    <video>
+        <source src="video.mp4" type="video/mp4">
+        <source src="video.ogg" type="video/ogg">
+        <source src="video.webm" type="video/webm">
+        <source src="video.mpg" type="video/mpg">
+        <p>este es el texto que mostrara si no soporta video html5</p>
+    </video>
+    
+        <video>
+        <source src="audio.mp3" type="audio/mp3">
+        <source src="audio.wav" type="audio/wav">
+        <source src="audio.acc" type="audio/acc">
+        <source src="audio.mpg" type="audio/mpg">
+        <p>este es el texto que mostrara si no soporta audio html</p>
+    </video>-->
+
+    <section>
+      <!--  <video src="invacion.mp4" width="300px" id="video" poster="poster.png"></video>-->
+       <video src="invacion.mp4" id="video"></video>
+        <br>
+        <button onclick="reproducir()">play</button>
+        <button onclick="pausar()">pausa</button>
+    </section>
+
+    <section>
+        <audio src="audio.mp3" autoplay="false" controls></audio>
+    </section>
+    
+    
+    <script>
+         var v =document.getElementById('video');
+        // console.log(v);
+        v.controls = true;
+        v.autoplay = false;
+        v.poster ="poster.png"
+        
+        function reproducir(){
+            v.play();
+        }
+        
+        function pausar(){
+            v.pause();
+        }
+    </script>
+
+</body>
+
+</html>
+<!--
+   atributos  audio
+   controls muestra los controles de reproduccion
+   loop
+   autoplay
+   atributos  video
+   controls muestra los controles de reproduccion
+   loop
+   autoplay
+   muted
+   poster
+   poster
+-->

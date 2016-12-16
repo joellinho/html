@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<style>
+		img{
+			max-width: 100%
+		}
+		figure{
+			border: solid 1px red;
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<img src="img/joaquin.jpg" alt="imagen de presona">
+
+	</section>
+	<section>
+		<h1>compresion de imagenes para web</h1>
+		
+	
+	</section>
+	<section>
+		<h2>Elementos giure y figcaptio (hatml5)</h2>
+		<!--figure
+		dirve para encerrar imagenes y videos acompañados de una leyenda (figcaption) son elemenos de bloque
+		es un elemento mas semantico relacion de la imagen y su titulo 
+		se pueden poner mas de una imagen en un figure..
+	-->
+	<figure>
+		<img src="img/joaquin.jpg" alt="">
+		<figcaption>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, libero. Sit voluptatibus voluptate minus, voluptatem aut! Quod dolorem, quis modi, illo nobis necessitatibus quam cum aspernatur, quidem iste expedita alias.
+		</figcaption>
+	</figure>
+
+	</section>
+	<section> 
+		<h2>Elemento picture de HTML5</h2>
+		<picture>
+			<source srcset="img/joaquin.jpg" media="(min-width : 1000px)">
+			<source srcset="img/gabriela.jpg" media="(min-width : 600px)">
+			<img src="img/juancarlos.jpg" alt="">
+		</picture>
+	</section>
+	
+</body>
+</html>
+
+<!--
+tipos 
+render  medida por pixeles cuando se agranda la imagenes se pixelean
+jpg para fotografias
+png admiten transparencia para logos
+gif admiten transparencias pero solo tiene  256 colores y con animaciones pesa mucho
+
+vectoriales codigo xml que el navegador interprea al vuelo
+svg
+
+<img src="" alt="">
+src ruta  se maneja al igual que los enlaces
+alt texto alternativa cuando la imagen no se puede ver (lectores de pantalla o buscadores de google)
+
+
+antes de comprimir mi imagen debe redimencionarse a el tamaño que necesitas
+sidebar ..300px ancho
+
+
+
+picture
+te permite mostrar imagenes a partir de las dimensiones del navegador(responsive)
+siempre el de mayor ancho va primero usa media queries
+y el ultimo se usa <img src="" alt=""> paara el menor o pro defecto
+funciona con tipos de imagenes vectorias y render
+
+
+
+pixabay    - pexels
+paginas para obtener imágenes gratuitas sin coyrigth
+
+
+
+
+-->
